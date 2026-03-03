@@ -1,0 +1,8 @@
+source venv/bin/activate
+to activate the venv
+
+python3 -m venv venv 
+to create a virtual environment (venv)
+
+pip install -r requirements.txt
+to install all the requirements
