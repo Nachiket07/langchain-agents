@@ -37,6 +37,7 @@ Musk was the largest donor in the 2024 U.S. presidential election, where he supp
     llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature = 0.0)
     chain = summary_prompt_template | llm
     response = chain.invoke(input = {"information": information})
+    #response = chain.invoke(input = {"info": information}) Error due to mismatch in input variable name
     print(response.content)
 
 if __name__ == "__main__":
